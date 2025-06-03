@@ -1,12 +1,16 @@
 <ion-header [translucent]="true">
+
   <ion-toolbar>
-    <ion-title>
-      Products
-      <ion-badge slot="end" color="primary">New</ion-badge>
-      <ion-badge slot="end" color="secondary">Sale</ion-badge>
-      <ion-badge slot="end" color="tertiary">Featured</ion-badge>
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -15,7 +19,6 @@
       <ion-title size="large">Products</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-searchbar animated="true" placeholder="Animated"></ion-searchbar>
   <app-explore-container name="Tab 1 page"></app-explore-container>
   <ion-card>
     <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
